@@ -1,0 +1,38 @@
+.main-button {
+    font-family: var(--text-primary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    padding: 10px 10px;
+    min-width: 200px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+.main-button--form-centered {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-button--with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-button__icon {
+    fill: var(--primary-white-color);
+    margin-left: 10px;
+}
