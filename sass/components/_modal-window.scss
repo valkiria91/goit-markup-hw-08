@@ -29,6 +29,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+   
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 .contact-form__title {
