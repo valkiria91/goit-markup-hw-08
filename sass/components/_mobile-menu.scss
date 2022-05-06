@@ -54,6 +54,7 @@
 .menu__burger-icon,
 .menu__close-icon {
     fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -84,6 +85,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--text-primary-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &--active:focus,
     &--active:hover{

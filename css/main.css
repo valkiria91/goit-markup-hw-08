@@ -77,15 +77,14 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -126,9 +125,22 @@ img {
   }
 }
 
+@media screen and (max-width: 1199.98px) {
+  .section--desctop-visually {
+    display: none;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section--top-padding-zero {
@@ -351,6 +363,7 @@ img {
 .menu__burger-icon,
 .menu__close-icon {
   fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__burger-icon:hover, .menu__burger-icon:focus,
@@ -373,6 +386,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--text-primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__nav-link--active:focus, .menu__nav-link--active:hover {
@@ -700,16 +714,39 @@ img {
   border: 1px solid transparent;
 }
 
-.features {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.features__item {
-  flex-basis: calc((100% - 90px) / 4);
+@media screen and (max-width: 767.98px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .features__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .features__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__icon-wrapper {
@@ -718,6 +755,7 @@ img {
   align-items: center;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  width: 100%;
   min-height: 120px;
   border-radius: 4px;
 }

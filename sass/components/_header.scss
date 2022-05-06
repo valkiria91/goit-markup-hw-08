@@ -9,11 +9,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-@media screen and (min-width: 767px)  {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        border-bottom: 1px solid #ececec;
+    @media screen and (min-width: 767px)  {
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #ececec;
     }
+    
     @media screen and (min-width: 1200px) {
         padding-top: 24px;
         padding-bottom: 24px;
