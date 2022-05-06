@@ -1,11 +1,25 @@
 .filters {
     @extend %list;
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-right: -8px;
+
+    @media screen and(max-width:767.98px) {
+        margin-bottom: 40px;
+        }
+
+    @media screen and(min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and(min-width:768px) {
+        margin-bottom: 50px;
+    }
 }
 
-.filters__item:not(:last-child) {
+.filters__item{
+    margin-top: 15px;
     margin-right: 8px;
 }
 

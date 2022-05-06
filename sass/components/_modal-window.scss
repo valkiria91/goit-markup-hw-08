@@ -2,8 +2,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     overflow:auto;
     background-color: var(--primary-white-color);
     border-radius: 4px;
@@ -12,8 +12,13 @@
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .is-hidden & {
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
         transform: scale(0.5, 0.5) translate(-100%, -100%);
     }
+    @media screen and(min-width:1200px) {
+        width: 528px;
+        height: 581px;
+}
 }
 
 .modal-window__close-button {
@@ -40,10 +45,14 @@
 .contact-form__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+
+    @media screen and(min-width:1200px) {
+        line-height: 1.15;
+    }
 }
 
 .contact-form__text {
@@ -58,7 +67,7 @@
 
 .contact-form__insert-wrapper {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
 
 .contact-form__input {
@@ -125,11 +134,15 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--text-secondary-color);
 
+    @media screen and(min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
     &::before {
         display: inline-block;
