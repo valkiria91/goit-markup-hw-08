@@ -67,12 +67,10 @@
             <div class="menu__nav-wrapper">
               <ul class="menu__nav">
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link" href="./index.html">Студия</a>
+                  <a class="menu__nav-link menu__nav-link--active" href="./index.html">Студия</a>
                 </li>
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link menu__nav-link--active" href="./portfolio.html"
-                    >Портфолио</a
-                  >
+                  <a class="menu__nav-link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="menu__nav-item">
                   <a class="menu__nav-link" href="#contacts">Контакты</a>
@@ -106,7 +104,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио cтудии</h1>
+          <!-- <h1 class="visually-hidden">Портфолио cтудии</h1>
           <ul class="filters">
             <li class="filters__item">
               <button class="filters__button" type="button">Все</button>
@@ -123,17 +121,40 @@
             <li class="filters__item">
               <button class="filters__button" type="button">Маркетинг</button>
             </li>
-          </ul>
+          </ul> -->
           <ul class="portfolio">
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img1.jpg"
-                    alt="Проект веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img1.webp 1x, ./images/portfolio-img1@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img1.jpg 1x, ./images/portfolio-img1@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img1-tablet.webp 1x,
+                    ./images/tablet/portfolio-img1-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img1-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 7680px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img1-mobile.webp 1x,
+                    ./images/mobile/portfolio-img1-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img1-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img1-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img1.jpg" alt="Проект веб-сайта" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -149,12 +170,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img2.jpg"
-                    alt="Проект дизайна постера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img2.webp 1x, ./images/portfolio-img2@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img2.jpg 1x, ./images/portfolio-img2@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img2-tablet.webp 1x,
+                    ./images/tablet/portfolio-img2-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img2-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img2-mobile.webp 1x,
+                    ./images/mobile/portfolio-img2-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img2-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img2-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img2.jpg" alt="Проект дизайна постера" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -172,12 +216,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img3.jpg"
-                    alt="Проект приложения"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img3.webp 1x, ./images/portfolio-img3@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img3.jpg 1x, ./images/portfolio-img3@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img3-tablet.webp 1x,
+                    ./images/tablet/portfolio-img3-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img3-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img3-mobile.webp 1x,
+                    ./images/mobile/portfolio-img3-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img3-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img3-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img3.jpg" alt="Проект приложения" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -193,12 +260,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img4.jpg"
-                    alt="Маркетинговый проект"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img4.webp 1x, ./images/portfolio-img4@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img4.jpg 1x, ./images/portfolio-img4@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img4-tablet.webp 1x,
+                    ./images/tablet/portfolio-img4-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img4-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img4-mobile.webp 1x,
+                    ./images/mobile/portfolio-img4-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img4-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img4-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img4.jpg" alt="Маркетинговый проект" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -214,12 +304,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img5.jpg"
-                    alt="Проект приложения"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img5.webp 1x, ./images/portfolio-img5@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img5.jpg 1x, ./images/portfolio-img5@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img5-tablet.webp 1x,
+                    ./images/tablet/portfolio-img5-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img5-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img5-mobile.webp 1x,
+                    ./images/mobile/portfolio-img5-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img5-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img5-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img5.jpg" alt="Проект приложения" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -235,12 +348,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img6.jpg"
-                    alt="Проект веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img6.webp 1x, ./images/portfolio-img6@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img6.jpg 1x, ./images/portfolio-img6@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img6-tablet.webp 1x,
+                    ./images/tablet/portfolio-img6-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img6-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img6-mobile.webp 1x,
+                    ./images/mobile/portfolio-img6-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img6-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img6-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img6.jpg" alt="Проект веб-сайта" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -256,12 +392,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img7.jpg"
-                    alt="Проект дизайна издания"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img7.webp 1x, ./images/portfolio-img7@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img7.jpg 1x, ./images/portfolio-img7@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img7-tablet.webp 1x,
+                    ./images/tablet/portfolio-img7-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img7-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img7-mobile.webp 1x,
+                    ./images/mobile/portfolio-img7-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img7-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img7-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img7.jpg" alt="Проект дизайна издания" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -277,12 +436,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img8.jpg"
-                    alt="Маркетинговый проект"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img8.webp 1x, ./images/portfolio-img8@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img8.jpg 1x, ./images/portfolio-img8@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img8-tablet.webp 1x,
+                    ./images/tablet/portfolio-img8-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img8-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img8-mobile.webp 1x,
+                    ./images/mobile/portfolio-img8-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img8-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img8-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img8.jpg" alt="Маркетинговый проект" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -298,12 +480,35 @@
             <li class="portfolio__item">
               <a class="portfolio__link-wrapper" href="">
                 <div class="portfolio__image-wrapper">
-                  <img
-                    src="./images/portfolio-img9.jpg"
-                    alt="Проект приложения"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source srcset="./images/portfolio-img9.webp 1x, ./images/portfolio-img9@2x.webp
+                    2x" media="(min-width: 1200px)" type="image/webp"" />
+                    <source
+                      srcset="./images/portfolio-img9.jpg 1x, ./images/portfolio-img9@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source srcset="./images/tablet/portfolio-img9-tablet.webp 1x,
+                    ./images/tablet/portfolio-img9-tablet@2x.webp 2x" media="(min-width: 768px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/tablet/portfolio-img9-tablet.jpg    1x,
+                        ./images/tablet/portfolio-img9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source srcset="./images/mobile/portfolio-img9-mobile.webp 1x,
+                    ./images/mobile/portfolio-img9-mobile@2x.webp 2x" media="(min-width: 320px)"
+                    type="image/webp"" />
+                    <source
+                      srcset="
+                        ./images/mobile/portfolio-img9-mobile.jpg    1x,
+                        ./images/mobile/portfolio-img9-mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img9.jpg" alt="Проект приложения" />
+                  </picture>
                   <p class="portfolio__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -320,7 +525,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="address">
           <a class="logo" lang="en" href="./index.html"
@@ -412,6 +618,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

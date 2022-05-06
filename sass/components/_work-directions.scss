@@ -1,4 +1,8 @@
-
+@media screen and (max-width:1199.98px) {
+    .desctop-visually {
+        display: none;
+    }
+}
 
 .work-directions {
     @extend %list;

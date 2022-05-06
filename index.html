@@ -160,61 +160,126 @@
           </ul>
         </div>
       </section>
-      <section class="section section--top-padding-zero section--desctop-visually">
+      <section class="section section--top-padding-zero desctop-visually">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work-directions">
             <li class="work-directions__item">
               <div class="work-directions__image-wrapper">
-                <img
-                  src="./images/desktop-apps.jpg"
-                  alt="Программист работающий в своем офисе"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/desktop-apps.webp 1x, ./images/desktop-apps@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/desktop-apps.jpg 1x, ./images/desktop-apps@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/desktop-apps.jpg"
+                    alt="Программист работающий в своем офисе"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work-directions__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work-directions__item">
               <div class="work-directions__image-wrapper">
                 <picture>
-                  <source srcset="./images/mobile-apps.webp 1x, ./images/mobile-apps@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
-                  <source srcset="./images/mobile-apps.jpg 1x, ./images/mobile-apps@2x.jpg 2x" media="(min-width: 1200px)">
-                   <img
-                  src="./images/mobile-apps.jpg"
-                  alt="Разработка мобильного приложения, работа над интерфейсом"
-                  width="370"
-                  height="294"
-                />
+                  <source
+                    srcset="./images/mobile-apps.webp 1x, ./images/mobile-apps@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/mobile-apps.jpg 1x, ./images/mobile-apps@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/mobile-apps.jpg"
+                    alt="Разработка мобильного приложения, работа над интерфейсом"
+                    width="370"
+                    height="294"
+                  />
                 </picture>
                 <p class="work-directions__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-directions__item">
               <div class="work-directions__image-wrapper">
-                <img
-                  src="./images/design-solutions.jpg"
-                  alt="Веб-дизайн с выбором рабочего цвета на графическом планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/design-solutions.webp 1x, ./images/design-solutions@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/design-solutionsjpg 1x, ./images/design-solutions@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/design-solutions.jpg"
+                    alt="Веб-дизайн с выбором рабочего цвета на графическом планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="work-directions__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="section section--theme-dark">
+      <section class="section section--theme-dark">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="workers">
             <li class="workers__item">
-              <img
-                src="./images/product-designer.jpg"
-                alt="Член команды - продакт-дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/product-designer.webp 1x, ./images/product-designer@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/product-designer.jpg 1x, ./images/product-designer@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/product-designer-tablet.webp    1x,
+                    ./images/tablet/product-designer-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/product-designer-tablet.jpg    1x,
+                    ./images/tablet/product-designer-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/product-designer-mobile.webp    1x,
+                    ./images/mobile/product-designer-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/product-designer-mobile.jpg    1x,
+                    ./images/mobile/product-designer-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/product-designer.jpg" alt="Член команды - продакт-дизайнер" />
+              </picture>
               <div class="workers__info-wrapper">
                 <h3 class="workers__title">Игорь Демьяненко</h3>
                 <p class="workers__text" lang="en">Product Designer</p>
@@ -251,12 +316,54 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="Член команды - фронтенд разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontend-developer.webp    1x,
+                    ./images/frontend-developer@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/frontend-developer.jpg 1x, ./images/frontend-developer@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/frontend-developer-tablet.webp    1x,
+                    ./images/tablet/frontend-developer-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/frontend-developer-tablet.jpg    1x,
+                    ./images/tablet/frontend-developer-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/frontend-developer-mobile.webp    1x,
+                    ./images/mobile/frontend-developer-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/frontend-developer-mobile.jpg    1x,
+                    ./images/mobile/frontend-developer-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/frontend-developer.jpg"
+                  alt="Член команды - фронтенд разработчик"
+                />
+              </picture>
               <div class="workers__info-wrapper">
                 <h3 class="workers__title">Ольга Репина</h3>
                 <p class="workers__text" lang="en">Frontend Developer</p>
@@ -293,12 +400,48 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/marketing.jpg"
-                alt="Член команды - маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/marketing.webp 1x, ./images/marketing@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/marketing-tablet.webp    1x,
+                    ./images/tablet/marketing-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/marketing-tablet.jpg    1x,
+                    ./images/tablet/marketing-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/marketing-mobile.webp    1x,
+                    ./images/mobile/marketing-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/marketing-mobile.jpg    1x,
+                    ./images/mobile/marketing-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/marketing.jpg" alt="Член команды - маркетолог" />
+              </picture>
               <div class="workers__info-wrapper">
                 <h3 class="workers__title">Николай Тарасов</h3>
                 <p class="workers__text" lang="en">Marketing</p>
@@ -335,12 +478,51 @@
               </div>
             </li>
             <li class="workers__item">
-              <img
-                src="./images/ui-designer.jpg"
-                alt="Член команды - дизайнер пользовательского интерфейса"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/ui-designer.webp 1x, ./images/ui-designer@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/ui-designer.jpg 1x, ./images/ui-designer@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui-designer-tablet.webp    1x,
+                    ./images/tablet/ui-designer-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ui-designer-tablet.jpg    1x,
+                    ./images/tablet/ui-designer-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ui-designer-mobile.webp    1x,
+                    ./images/mobile/ui-designer-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ui-designer-mobile.jpg    1x,
+                    ./images/mobile/ui-designer-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/ui-designer.jpg"
+                  alt="Член команды - дизайнер пользовательского интерфейса"
+                />
+              </picture>
               <div class="workers__info-wrapper">
                 <h3 class="workers__title">Михаил Ермаков</h3>
                 <p class="workers__text" lang="en">UI Designer</p>
@@ -423,7 +605,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div class="address">
           <a class="logo" lang="en" href="./index.html"
@@ -575,8 +757,8 @@
           <button class="main-button main-button--form-centered" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
