@@ -1171,7 +1171,7 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   min-height: 50px;
-  width: 450px;
+  width: 100%;
   background-color: var(--theme-dark-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1179,6 +1179,12 @@ address {
   padding-left: 16px;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
