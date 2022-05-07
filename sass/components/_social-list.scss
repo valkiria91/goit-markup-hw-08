@@ -1,8 +1,11 @@
 .social-list {
     @extend %list;
     display: flex;     
-    justify-content: space-between;
-    
+    justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .social-list__link {
@@ -38,6 +41,3 @@
     }
 }
 
-.social-list__item:not(:last-child) {
-    margin-right: 10px;
-}

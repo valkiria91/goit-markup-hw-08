@@ -2,6 +2,11 @@
     background-color: var(--theme-dark-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width:1199.98px) {
+        text-align: center;
+    }
+
 }
 
 address {
@@ -10,23 +15,52 @@ address {
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__wrapper {
+    @media screen and (min-width:768px){
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width:1200px){
+        margin-bottom: 0;
+    }
 }
 
 .address {
-    margin-right: 70px;
+    @media screen and(min-width:768px) and(max-width:1199.98px) {
+        margin-right: 165px;
+    }
+
+    @media screen and(min-width:1200px) {
+        margin-right: 70px;
+    }
 }
 
-.address__list{
+.address__list {
     @extend %list;
 }
 
 .address__street-item {
+    @media screen and(max-width:767.98px) {
+        margin-bottom: 8px;
+    }
+
     margin-bottom: 9px;
 }
 
 .address__contact-item:not(:last-child) {
+    @media screen and(max-width:767.98px) {
+        margin-bottom: 8px;
+    }
+
     margin-bottom: 9px;
 }
 
@@ -46,9 +80,15 @@ address {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, 
+    &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+}
+
+.join-wrapper {
+    @media screen and(max-width:767.98px) {
+        margin-top: 60px;
     }
 }
 
@@ -63,11 +103,19 @@ address {
 }
 
 .subscribe {
-    margin-left: auto;
+    @media screen and(max-width:767.98px) {
+        margin-top: 60px;
+    }
+    
+    @media screen and(min-width:1200px) {
+        margin-left: auto;
+    }
 }
 
 .subscribe__insert-wrapper {
-    display: flex;
+    @media screen and(min-width:1200px) {
+        display: flex;
+    }
 }
 
 .subscribe__text {
@@ -82,13 +130,14 @@ address {
 }
 
 .subscribe__input {
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     min-height: 50px;
-    width: 358px;
+    width: 450px;
     background-color: var(--theme-dark-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -96,6 +145,12 @@ address {
     padding-left: 16px;
     margin-right: 12px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:1200px) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 
     &:hover,
     &:focus {
