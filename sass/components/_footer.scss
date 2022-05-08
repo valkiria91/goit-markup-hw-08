@@ -6,7 +6,6 @@
     @media screen and (max-width:1199.98px) {
         text-align: center;
     }
-
 }
 
 address {
@@ -15,23 +14,10 @@ address {
 }
 
 .footer__container {
-    @media screen and(min-width:1200px) {
         display: flex;
         align-items: baseline;
-    }
-}
-
-.footer__wrapper {
-    @media screen and (min-width:768px){
-        display: flex;
-        align-items: baseline;
+        flex-wrap: wrap;
         justify-content: space-around;
-        margin-bottom: 60px;
-    }
-
-    @media screen and (min-width:1200px){
-        margin-bottom: 0;
-    }
 }
 
 .address {
@@ -45,19 +31,19 @@ address {
 }
 
 .address__street-item {
-    @media screen and(max-width:767.98px) {
-        margin-bottom: 8px;
+    margin-bottom: 8px;
+        
+    @media screen and(min-width:1200px) {
+        margin-bottom: 9px;
     }
-
-    margin-bottom: 9px;
 }
 
 .address__contact-item:not(:last-child) {
-    @media screen and(max-width:767.98px) {
-        margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
 
-    margin-bottom: 9px;
+    @media screen and(min-width:1200px) {
+        margin-bottom: 9px;
+    }  
 }
 
 .address__street-link,
@@ -99,7 +85,7 @@ address {
 }
 
 .subscribe {
-    @media screen and(max-width:767.98px) {
+    @media screen and(max-width:1199.98px) {
         margin-top: 60px;
     }
     

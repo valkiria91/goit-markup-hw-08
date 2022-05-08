@@ -1032,26 +1032,11 @@ address {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    display: flex;
-    align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__wrapper {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__wrapper {
-    margin-bottom: 0;
-  }
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1061,22 +1046,22 @@ address {
 }
 
 .address__street-item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .address__street-item {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 }
 
 .address__contact-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .address__contact-item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 }
 
@@ -1116,7 +1101,7 @@ address {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .subscribe {
     margin-top: 60px;
   }
