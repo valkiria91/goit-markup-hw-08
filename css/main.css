@@ -586,7 +586,6 @@ img {
   height: 609px;
   top: 50%;
   left: 50%;
-  overflow: auto;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   padding: 40px;
@@ -600,16 +599,15 @@ img {
   }
 }
 
-.is-hidden .modal-window {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: scale(0.5, 0.5) translate(-100%, -100%);
-}
-
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 528px;
     height: 581px;
   }
+}
+
+.is-hidden .modal-window {
+  transform: scale(0.5, 0.5) translate(-100%, -100%);
 }
 
 .modal-window__close-button {
@@ -723,6 +721,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
