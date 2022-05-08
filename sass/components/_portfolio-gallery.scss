@@ -20,10 +20,6 @@
         &:not(:nth-child(2n)) {
             margin-right: 30px;
         }
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
     }
     
     @media screen and (min-width:1200px){
